@@ -5,3 +5,9 @@
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 Password:bandit0
+
+
+Skills Required:
+  SSH connections
+  Basic file reading (cat)
+  Understanding file paths
