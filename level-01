@@ -1,0 +1,7 @@
+## Getting Started with Bandit
+
+1. SSH into the first level:
+```bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+Password:bandit0
