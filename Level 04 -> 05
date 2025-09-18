@@ -1,0 +1,34 @@
+# Connect to bandit4
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+# Navigate to inhere directory
+cd inhere
+
+# List all files
+ls
+
+# Check file types individually
+file ./-file00
+file ./-file01
+# ... continue for all files
+
+# More efficient: check all files at once
+file ./-file*
+
+# Alternative: use find with file type checking
+find . -type f -exec file {} \;
+
+# Once identified, read the ASCII text file
+cat ./-file07
+
+
+Solution
+Use file ./-file* to check all files at once. Only one will show "ASCII text" - that's the file containing the password.
+Key Learnings
+
+file command for determining file types
+Understanding ASCII text vs binary data
+Wildcards (*) for pattern matching
+Difference between human-readable and binary files
+Efficient batch operations using wildcards
+Why we need ./ prefix for files starting with -
