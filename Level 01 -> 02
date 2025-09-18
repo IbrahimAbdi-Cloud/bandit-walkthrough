@@ -1,0 +1,24 @@
+# Connect to bandit1
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+# List files
+ls
+
+# Try regular cat (this won't work as expected)
+cat -
+
+# Use relative path to specify the file explicitly
+cat ./-
+
+# Alternative method using absolute path
+cat /home/bandit1/-
+
+
+Solution
+Use cat ./- or the absolute path to read the file. The ./ explicitly tells the system we're referring to a file, not using - as a command option.
+Key Learnings
+
+Special characters in filenames and how they're interpreted
+Using ./ for relative path specification
+Understanding the difference between command options and filenames
+Alternative methods: absolute paths
