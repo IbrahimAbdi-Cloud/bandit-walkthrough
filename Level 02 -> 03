@@ -1,0 +1,28 @@
+# Connect to bandit2
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+# List files
+ls
+
+# Method 1: Use quotes
+cat "spaces in this filename"
+
+# Method 2: Use single quotes
+cat 'spaces in this filename'
+
+# Method 3: Use backslash escaping
+cat spaces\ in\ this\ filename
+
+# Method 4: Use tab completion (type 'cat sp' then press Tab)
+
+
+
+Solution
+Any of the quoted methods work. Tab completion is particularly useful as it automatically handles the escaping.
+Key Learnings
+
+Handling spaces in filenames
+Different quoting mechanisms in bash (single vs double quotes)
+Backslash escaping for special characters
+Tab completion as a practical solution
+Understanding how the shell parses command arguments
