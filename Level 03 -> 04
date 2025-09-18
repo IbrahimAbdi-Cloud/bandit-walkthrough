@@ -1,0 +1,31 @@
+# Connect to bandit3
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+# List visible files and directories
+ls
+
+# Change to the inhere directory
+cd inhere
+
+# List files (won't show hidden files)
+ls
+
+# List all files including hidden ones
+ls -a
+
+# Alternative: ls -la for detailed listing
+ls -la
+
+# Read the hidden file
+cat .hidden
+
+
+Solution
+Use ls -a to show hidden files. The file .hidden contains the password.
+Key Learnings
+
+Hidden files concept (files starting with .)
+ls -a flag to show all files including hidden ones
+ls -la for detailed listing with permissions
+Directory navigation with cd
+Understanding file visibility rules in Linux
