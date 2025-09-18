@@ -1,0 +1,23 @@
+# Connect to bandit0
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+# Password: bandit0
+
+# List files in current directory
+ls
+
+# Read the readme file
+cat readme
+
+# Connect to next level
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+# Password: [REDACTED]
+
+
+Solution
+The readme file contains the password for bandit1. Simple cat command reveals the contents.
+Key Learnings
+
+Basic SSH connection syntax
+ls command for listing directory contents
+cat command for reading file contents
+Understanding the home directory concept
